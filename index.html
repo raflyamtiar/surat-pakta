@@ -35,7 +35,7 @@
         </div>
         <ul id="menu-list" class="hidden">
             <li><a href="#">Beranda</a></li>
-            <li><a href="#role">Lapor</a></li>
+            <li><a href="#">Lapor</a></li>
             <li><a href="">Pedoman dan Prosedur SMI</a></li>
             <li><a href="">Agenda Sosialisasi PK</a></li>
             <li><a href="">Kebijakan & Saran</a></li>
@@ -44,6 +44,11 @@
         </ul>
     </nav>
     <!-- navbar end -->
+
+    <!-- bg -->
+    <figure class="mybg">
+        <img src="assets/kantor.jpg" alt="">
+    </figure>
 
     <!-- Main page start -->
     <main class="main-page" id="beranda">
@@ -72,9 +77,6 @@
             </div>
         </div>
 
-        <div class="mybg">
-        </div>
-
         <!-- Role -->
         <div class="role" id="role">
             <div class="role-header">
@@ -90,9 +92,7 @@
                     </div>
 
                     <div class="role-button-container">
-                        <a href="#"><button>
-                                Lihat Perjanjian
-                            </button></a>
+                        <button onclick="togglePopup('role-popup-1')"> Lihat Perjanjian </button>
                     </div>
                 </div>
 
@@ -106,11 +106,7 @@
                     </div>
 
                     <div class="role-button-container">
-                        <a href="#">
-                            <button>
-                                Lihat Perjanjian
-                            </button>
-                        </a>
+                        <button onclick="togglePopup('role-popup-2')"> Lihat Perjanjian </button>
                     </div>
                 </div>
 
@@ -124,10 +120,109 @@
                     </div>
 
                     <div class="role-button-container">
-                        <a href="#"><button>
-                                Lihat Perjanjian
-                            </button></a>
+                        <button onclick="togglePopup('role-popup-3')"> Lihat Perjanjian </button>
                     </div>
+                </div>
+            </div>
+            <div class="role-popup-1" id="role-popup-1">
+                <div class="role-popup-content-1"></div>
+                <div class="role-popup-text-1">
+                    <div class="role-close-btn-1" onclick="togglePopup('role-popup-1')"><i
+                            class="fa-solid fa-circle-xmark"></i></div>
+                    <h3>SYARAT DAN KETENTUAN PEGAWAI</h3>
+                    <p>Menyatakan bahwa saya dengan sungguh-sungguh dalam rangka pelaksanaan pemeriksaan dan
+                        pengujian di BPMSPH bersedia menjalankan dan mentaati hal-hal seperti yang tertulis
+                        dibawah ini :</p>
+                    <br>
+                    <ol>
+                        <li>Berperan secara pro aktif dalam upaya pencegahan dan pemberantasan Korupsi, Kolusi
+                            dan Nepotisme (KKN) serta tidak melibatkan diri dalam perbuatan tercela;</li>
+                        <li>Berkomitmen tidak meminta pemberian secara langsung dan/atau tidak langsung berupa
+                            suap,
+                            hadiah, bantuan, atau bentuk lainnya yang tidak sesuai dengan ketentuan yang berlaku
+                            serta melaporkan pemberian tersebut apabila menerimanya;</li>
+                        <li>Berkomitmen bersikap transparan, jujur, objektif dan akuntabel untuk tidak terlibat
+                            atau
+                            terpengaruh terhadap tekanan komersial, keuangan yang dapat mempengaruhi hasil
+                            pengujian
+                            untuk menghindari benturan kepentingan (conflict of interest) dalam pelaksanaan
+                            tugas;
+                        </li>
+                        <li>Berkomitmen untuk bebas dari kegiatan lain, internal dan eksternal yang dapat
+                            mengurangi
+                            kepercayaan dalam kemandirian pertimbangan dan integritas dalam kegiatan pengujian,
+                            dan
+                            berpengaruh buruk terhadap mutu kerja;</li>
+                        <li>Berkomitmen untuk bekerja secara profesional, menjunjung tinggi aturan yang berlaku
+                            baik di lingkungan laboratorium pengujian;</li>
+                        <li>Berkomitmen untuk menjaga kerahasiaan informasi dan hak kepemilikan dari pelanggan
+                            Laboratorium sesuai dengan persyaratan dan ketentuan yang berlaku, termasuk
+                            informasi
+                            dalam bentuk elektronik;</li>
+                        <li>Berkomitmen memberi contoh dalam kepatuhan terhadap peraturan perundang-undangan
+                            dalam
+                            melaksanaan tugas terutama kepada pegawai yang berada di bawah pengawasan saya dan
+                            sesama pegawai di lingkungan kerja saya secara konsisten;</li>
+                        <li>Berkomitmen menyampaikan informasi penyimpangan integritas serta turut menjaga
+                            kerahasiaan atas pelanggaran peraturan yang dilaporkannya;</li>
+                        <li>Bila saya melanggar hal-hal tersebut di atas, saya siap menghadapi konsekuensi
+                            berdasarkan ketentuan dan perundang-undangan yang berlaku.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="role-popup-2" id="role-popup-2">
+                <div class="role-popup-content-2"></div>
+                <div class="role-popup-text-2">
+                    <div class="role-close-btn-2" onclick="togglePopup('role-popup-2')"><i
+                            class="fa-solid fa-circle-xmark"></i></div>
+                    <h3>SYARAT DAN KETENTUAN PENYEDIA JASA</h3>
+                    <p>Menyatakan bahwa saya dengan sungguh-sungguh dalam rangka pelaksanaan pemeriksaan dan pengujian
+                        di BPMSPH bersedia menjalankan dan mentaati hal-hal seperti yang tertulis dibawah ini:</p>
+                    <br>
+                    <ol>
+                        <li>Berperan secara pro aktif dalam upaya pencegahan dan pemberantasan Korupsi, Kolusi dan
+                            Nepotisme (KKN) serta tidak melibatkan diri dalam perbuatan tercela;</li>
+                        <li>Tidak melakukan pemberian secara langsung dan/atau tidak langsung berupa suap, hadiah,
+                            bantuan, atau bentuk lainnya yang tidak sesuai dengan ketentuan yang berlaku serta
+                            melaporkan pemberian permintaan tersebut apabila ada yang menerimanya;</li>
+                        <li>Bersikap transparan, jujur, objektif dan akuntabel dalam melaksanakan kegiatan sebagai
+                            penyedia jasa;
+                        </li>
+                        <li>Menghindari benturan kepentingan (conict of interest) dalam pelaksanaan kegiatan sebagai
+                            penyedia jasa; </li>
+                        <li>Memberi contoh dalam kepatuhan terhadap peraturan perundang-undangan dalam melaksanakan
+                            kegiatan sebagai penyedia jasa; </li>
+                        <li>Akan menyampaikan informasi penyimpangan integritas serta turut menjaga kerahasiaan atas
+                            pelanggaran peraturan yang dilaporkannya; </li>
+                        <li>Bila saya melanggar hal-hal tersebut di atas, saya siap menghadapi konsekuensi berdasarkan
+                            ketentuan dan perundang-undangan yang berlaku.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="role-popup-3" id="role-popup-3">
+                <div class="role-popup-content-3"></div>
+                <div class="role-popup-text-3">
+                    <div class="role-close-btn-3" onclick="togglePopup('role-popup-3')"><i
+                            class="fa-solid fa-circle-xmark"></i></div>
+                    <h3>SYARAT DAN KETENTUAN PENGGUNA JASA</h3>
+                    <p>Menyatakan bahwa saya dengan sungguh-sungguh akan menjalankan dan mentaati hal-hal seperti yang
+                        tertulis dibawah ini:</p>
+                    <br>
+                    <ol>
+                        <li>Berperan secara pro aktif dalam upaya pencegahan dan pemberantasan Korupsi, Kolusi dan
+                            Nepotisme (KKN) serta tidak melibatkan diri dalam perbuatan tercela;</li>
+                        <li>Bersikap transparan, jujur, objektif dan akuntabel dalam melaksanakan kegiatan sebagai
+                            pengguna jasa;</li>
+                        <li>Menghindari benturan kepentingan (conict of interest) dalam pelaksanaan kegiatan sebagai
+                            pengguna jasa;
+                        </li>
+                        <li>Memberi contoh dalam kepatuhan terhadap peraturan perundang-undangan dalam melaksanakan
+                            kegiatan sebagai pengguna jasa;</li>
+                        <li>Akan menyampaikan informasi penyimpangan integritas serta turut menjaga kerahasiaan atas
+                            pelanggaran peraturan yang dilaporkannya;</li>
+                        <li>Bila saya melanggar hal-hal tersebut di atas, saya siap menghadapi konsekuensi berdasarkan
+                            ketentuan dan perundang-undangan yang berlaku.</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -227,8 +322,33 @@
     <!-- Main page end -->
 
 
-    <footer class="container-footer">
-        <div></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-address">
+                <h3>Balai Pengujian Mutu dan Sertifikasi Produk Hewan</h3>
+                <p><a href="https://maps.app.goo.gl/FwhEJiirMgLarwDT8"> Jalan Pemuda No 29A Kecamatan Tanah Sareal Kota
+                        Bogor, Jawa Barat </a></p>
+                <p>Email: <a href="mailto:bpmsph@pertanian.go.id">bpmsph@pertanian.go.id</a></p>
+                <p>Tel/Fax: +62-251-8377111, +62-251-8353712</p>
+            </div>
+            <div class="footer-sosmed">
+                <h3>Sosial Media & Chat</h3>
+                <ul>
+                    <li><a href="https://web.facebook.com/bpmsph.ditjenpkh.5"><i class="fa-brands fa-facebook"></i>
+                            bpmsph.ditjenpkh.5</a></li>
+                    <li><a href="https://twitter.com/BPMSPH"><i class="fa-brands fa-x-twitter"></i> @BPMSPH</a></li>
+                    <li><a href="https://www.instagram.com/bpmsph_ditjenpkh/"><i class="fa-brands fa-instagram"></i>
+                            @bpmsph_ditjenpkh</a></li>
+                    <li><a href="https://www.youtube.com/@bpmsphbogorkementan231"><i class="fa-brands fa-youtube"></i>
+                            BPMSPH Bogor Kementan</a></li>
+                    <li><a href="https://wa.me/08111109922"><i class="fa-brands fa-whatsapp"></i> 0811 1109 922</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>SNI ISO 9001:2015 - 37001:2016 - 45001:2018 SISTEM MANAJEMEN INTEGRASI - BALAI PENGUJIAN MUTU DAN
+                SERTIFIKASI PRODUK HEWAN <span>Hak Cipta&copy;2024 BPMSPH. Semua Hak Dilindungi</span></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
