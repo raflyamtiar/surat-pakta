@@ -78,6 +78,44 @@ nav ul li a:hover {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  background-color: #0077b6;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:last-child .dropdown-content {
+  right: 0;
+  left: auto;
+}
+
 /* main page */
 .main-page {
   display: flex;
@@ -130,7 +168,7 @@ nav ul li a:hover {
 }
 
 .home-content-text button {
-  background-color: blue;
+  background-color: #0077b6;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -142,9 +180,70 @@ nav ul li a:hover {
   border-style: none;
 }
 
-/* main page end */
-.role {
+/* CONTENT TUTORIAL */
+.tutorial {
   background-color: rgba(232, 232, 232, 0.85);
+  width: 100%;
+  height: 100vh;
+}
+
+.tutorial .tutorial-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  margin-top: 50px;
+}
+.tutorial-header p {
+  margin-top: 20px;
+}
+
+.tutorial .tutorial-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
+  padding: 5%;
+}
+
+.tutorial .tutorial-main {
+  height: 250px;
+  width: 200px;
+  background-color: #f3f3f3;
+  box-shadow: 0 4px 8px 0 #0077b6, 0 6px 20px 0 #ade8f4;
+}
+
+.tutorial .tutorial-title-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tutorial-title-container h4 {
+  padding: 5%;
+}
+
+.tutorial .tutorial-icon i {
+  font-size: 30px;
+  padding-bottom: 50%;
+  color: #0077b6;
+}
+
+.tutorial .tutorial-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 20%;
+  width: 95%;
+  font-size: 16px;
+}
+
+/* CONTENT ROLE */
+.role {
+  background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
   height: 100vh;
 }
@@ -229,7 +328,7 @@ nav ul li a:hover {
 
 .role-popup-1 .role-popup-text-1 {
   position: absolute;
-  top: 150%;
+  top: 250%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #ffffff;
@@ -289,7 +388,7 @@ nav ul li a:hover {
 .role-popup-2 .role-popup-text-2,
 .role-popup-3 .role-popup-text-3 {
   position: absolute;
-  top: 150%;
+  top: 250%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #ffffff;
@@ -333,66 +432,6 @@ nav ul li a:hover {
 .role-popup-3.active .role-popup-text-3 {
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
-}
-
-.tutorial {
-  background-color: rgba(255, 255, 255, 0.85);
-  width: 100%;
-  height: 100vh;
-}
-
-.tutorial .tutorial-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: black;
-  margin-top: 50px;
-}
-.tutorial-header p {
-  margin-top: 20px;
-}
-
-.tutorial .tutorial-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: black;
-  padding: 5%;
-}
-
-.tutorial .tutorial-main {
-  height: 250px;
-  width: 200px;
-  background-color: #f3f3f3;
-  box-shadow: 0 4px 8px 0 #0077b6, 0 6px 20px 0 #ade8f4;
-}
-
-.tutorial .tutorial-title-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.tutorial-title-container h4 {
-  padding: 5%;
-}
-
-.tutorial .tutorial-icon i {
-  font-size: 30px;
-  padding-bottom: 50%;
-  color: #0077b6;
-}
-
-.tutorial .tutorial-content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  height: 20%;
-  width: 95%;
-  font-size: 16px;
 }
 
 .form {
@@ -449,6 +488,29 @@ nav ul li a:hover {
 
 .form-content .form-content-logo img {
   width: 25vw;
+}
+
+.form-container {
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 /* Footer */
@@ -528,6 +590,15 @@ footer {
 /* ukuran tablet */
 @media screen and (max-width: 768px) {
   html {
+    font-size: 75%;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
     font-size: 75%;
   }
 
