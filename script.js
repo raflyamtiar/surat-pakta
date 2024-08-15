@@ -13,21 +13,29 @@ function showForm() {
   const formContainer = document.getElementById("form-container");
 
   // Hide all forms
-  document.getElementById("pegawai-form").style.display = "none";
-  document.getElementById("penyedia-jasa-form").style.display = "none";
-  document.getElementById("pengguna-jasa-form").style.display = "none";
-
-  // Show the form container
-  formContainer.style.display = "block";
+  document.getElementById("form-pegawai").style.display = "none";
+  document.getElementById("form-penyedia-jasa").style.display = "none";
+  document.getElementById("form-pengguna-jasa").style.display = "none";
+  document.getElementById("form-auditor").style.display = "none";
 
   // Show the selected form
   if (selectedRole === "Pegawai") {
-    document.getElementById("pegawai-form").style.display = "block";
+    formContainer.style.display = "block";
+    document.getElementById("form-pegawai").style.display = "block";
   } else if (selectedRole === "Penyedia Jasa") {
-    document.getElementById("penyedia-jasa-form").style.display = "block";
+    formContainer.style.display = "block";
+    document.getElementById("form-penyedia-jasa").style.display = "block";
   } else if (selectedRole === "Pengguna Jasa") {
-    document.getElementById("pengguna-jasa-form").style.display = "block";
+    formContainer.style.display = "block";
+    document.getElementById("form-pengguna-jasa").style.display = "block";
+  } else if (selectedRole === "Auditor") {
+    formContainer.style.display = "block";
+    document.getElementById("form-auditor").style.display = "block";
   } else {
     formContainer.style.display = "none"; // Hide container if no valid role is selected
+    return; // Exit if no valid role is selected
   }
+
+  // Scroll smoothly to the form container
+  formContainer.scrollIntoView({ behavior: "smooth" });
 }
