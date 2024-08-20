@@ -11,31 +11,35 @@ function togglePopup(popupId) {
 function showForm() {
   const selectedRole = document.getElementById("form-role").value;
   const formContainer = document.getElementById("form-container");
+  const roleTitle = document.getElementById("role-title");
 
-  // Hide all forms
-  document.getElementById("form-pegawai").style.display = "none";
-  document.getElementById("form-penyedia-jasa").style.display = "none";
-  document.getElementById("form-pengguna-jasa").style.display = "none";
-  document.getElementById("form-auditor").style.display = "none";
-
-  // Show the selected form
-  if (selectedRole === "Pegawai") {
+  if (selectedRole !== "null") {
+    roleTitle.innerText = selectedRole.toUpperCase();
     formContainer.style.display = "block";
-    document.getElementById("form-pegawai").style.display = "block";
-  } else if (selectedRole === "Penyedia Jasa") {
-    formContainer.style.display = "block";
-    document.getElementById("form-penyedia-jasa").style.display = "block";
-  } else if (selectedRole === "Pengguna Jasa") {
-    formContainer.style.display = "block";
-    document.getElementById("form-pengguna-jasa").style.display = "block";
-  } else if (selectedRole === "Auditor") {
-    formContainer.style.display = "block";
-    document.getElementById("form-auditor").style.display = "block";
+    formContainer.scrollIntoView({ behavior: "smooth" });
   } else {
-    formContainer.style.display = "none"; // Hide container if no valid role is selected
-    return; // Exit if no valid role is selected
+    formContainer.style.display = "none";
   }
-
-  // Scroll smoothly to the form container
-  formContainer.scrollIntoView({ behavior: "smooth" });
 }
+
+// Dapatkan elemen tombol
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Fungsi untuk menunjukkan tombol ketika di-scroll ke bawah
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Fungsi untuk scroll ke atas ketika tombol diklik
+scrollToTopBtn.onclick = function () {
+  document.body.scrollTop = 0; // Untuk Safari
+  document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+};

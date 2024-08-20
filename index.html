@@ -35,7 +35,7 @@
         </div>
         <ul id="menu-list" class="hidden">
             <li><a href="index.html">Beranda</a></li>
-            <li><a href="#">Lapor</a></li>
+            <li><a href="lapor.html">Lapor</a></li>
             <li class="dropdown">
                 <a href="https://sites.google.com/view/smapbpmsph/pedoman-dan-prosedur-mi">Pedoman dan Prosedur SMI <i
                         class="fa-solid fa-caret-down"></i></a>
@@ -81,15 +81,14 @@
                     <li><a href="https://sites.google.com/view/smapbpmsph/eviden/manual-sni-iso">Manual SNI ISO</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="">Lainnya <i class="fa-solid fa-caret-down"></i></a>
-                <ul class="dropdown-content">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Cara Melapor</a></li>
-                </ul>
+            <li> <a href="web.html">Web</i></a>
             </li>
         </ul>
     </nav> <!-- navbar end -->
+
+    <!-- icon langsung ke top -->
+    <i id="scrollToTopBtn" title="Go to top" class="fa-solid fa-circle-up"></i>
+
 
     <!-- bg -->
     <figure class="mybg">
@@ -238,7 +237,7 @@
                 <div class="role-main">
                     <div class="role-title-container">
                         <figure class="role-image">
-                            <img src="assets/pengguna.png" alt="">
+                            <img src="assets/Auditor.png" alt="">
 
                         </figure>
                         <h4>Auditor</h4>
@@ -393,7 +392,7 @@
                             <h3>Silahkan memilih Peran yang dibutuhkan:</h3>
                         </div>
                         <div class="form-choice">
-                            <p>Pilih Role</p>
+                            <p>Pilih Peran</p>
                             <select name="form-role" id="form-role" onchange="showForm()">
                                 <option value="null">---Silahkan Pilih---</option>
                                 <option value="Pegawai">Pegawai</option>
@@ -409,186 +408,54 @@
                 </div>
 
                 <!-- Form Container -->
-
-                <form action="down-surat.html" id="form-container" class="form-container" method="get" novalidate
-                    autocomplete="off">
-                    <!-- Form for Pegawai -->
-                    <div id="form-pegawai" class="form-role" style="display: none;">
-                        <h3>FORMULIR PAKTA INTEGRITAS</h3>
-                        <div class="img-form"><img src="assets/pembatas.png" alt=""></div>
-                        <h3>PEGAWAI</h3>
-                        <div class="form-group">
-                            <label for="nama-pegawai">Nama Lengkap:</label>
-                            <input type="text" id="nama-pegawai" name="nama-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="jabatan-pegawai">Jabatan:</label>
-                            <input type="text" id="jabatan-pegawai" name="jabatan-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="instansi-pegawai">Instansi:</label>
-                            <input type="text" id="instansi-pegawai" name="instansi-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="alamat-pegawai">Alamat Lengkap:</label>
-                            <textarea id="alamat-pegawai" name="alamat-pegawai" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="email-pegawai">Email:</label>
-                            <input type="email" id="email-pegawai" name="email-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="kota-pegawai">Kota:</label>
-                            <input type="text" id="kota-pegawai" name="kota-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal-pegawai">Tanggal:</label>
-                            <input type="date" id="tanggal-pegawai" name="tanggal-pegawai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nohp-pegawai">Nomor Handphone/WhatsApp:</label>
-                            <input type="tel" id="nohp-pegawai" name="nohp-pegawai" required>
-                        </div>
-                        <div class="btn-send-form">
-                            <button type="submit">
-                                Kirim <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
+                <form action="down-surat.html" id="form-container" class="form-container" style="display: none;"
+                    method="get" autocomplete="off">
+                    <h3>FORMULIR PAKTA INTEGRITAS</h3>
+                    <div class="img-form"><img src="assets/pembatas.png" alt=""></div>
+                    <h3 id="role-title">ROLE TITLE</h3>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span>*</span></label>
+                        <input type="text" id="nama" name="nama" max-length="100" required>
                     </div>
-
-                    <!-- Form for Penyedia Jasa -->
-                    <div id="form-penyedia-jasa" class="form-role" style="display: none;">
-                        <h3>FORMULIR PAKTA INTEGRITAS</h3>
-                        <div class="img-form"><img src="assets/pembatas.png" alt=""></div>
-                        <h3>PENYEDIA JASA</h3>
-                        <div class="form-group">
-                            <label for="nama-penyedia-jasa">Nama Lengkap:</label>
-                            <input type="text" id="nama-penyedia-jasa" name="nama-penyedia-jasa" autofocus required>
-                        </div>
-                        <div class="form-group">
-                            <label for="jabatan-penyedia-jasa">Jabatan:</label>
-                            <input type="text" id="jabatan-penyedia-jasa" name="jabatan-penyedia-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="instansi-penyedia-jasa">Instansi:</label>
-                            <input type="text" id="instansi-penyedia-jasa" name="instansi-penyedia-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="alamat-penyedia-jasa">Alamat Lengkap:</label>
-                            <textarea id="alamat-penyedia-jasa" name="alamat-penyedia-jasa" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="email-penyedia-jasa">Email:</label>
-                            <input type="email" id="email-penyedia-jasa" name="email-penyedia-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="kota-penyedia-jasa">Kota:</label>
-                            <input type="text" id="kota-penyedia-jasa" name="kota-penyedia-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal-penyedia-jasa">Tanggal:</label>
-                            <input type="date" id="tanggal-penyedia-jasa" name="tanggal-penyedia-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nohp-penyedia-jasa">Nomor Handphone/WhatsApp:</label>
-                            <input type="tel" id="nohp-penyedia-jasa" name="nohp-penyedia-jasa" required>
-                        </div>
-                        <div class="btn-send-form">
-                            <button type="submit">
-                                Kirim <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
+                    <div class="form-group">
+                        <label for="jabatan">Jabatan <span>*</span></label>
+                        <input type="text" id="jabatan" name="jabatan" maxlength="50" required>
                     </div>
-
-                    <!-- Form for Pengguna Jasa -->
-                    <div id="form-pengguna-jasa" class="form-role" style="display: none;">
-                        <h3>FORMULIR PAKTA INTEGRITAS</h3>
-                        <div class="img-form"><img src="assets/pembatas.png" alt=""></div>
-                        <h3>PENGGUNA JASA</h3>
-                        <div class="form-group">
-                            <label for="nama-pengguna-jasa">Nama Lengkap:</label>
-                            <input type="text" id="nama-pengguna-jasa" name="nama-pengguna-jasa" autofocus required>
-                        </div>
-                        <div class="form-group">
-                            <label for="jabatan-pengguna-jasa">Jabatan:</label>
-                            <input type="text" id="jabatan-pengguna-jasa" name="jabatan-pengguna-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="instansi-pengguna-jasa">Instansi:</label>
-                            <input type="text" id="instansi-pengguna-jasa" name="instansi-pengguna-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="alamat-pengguna-jasa">Alamat Lengkap:</label>
-                            <textarea id="alamat-pengguna-jasa" name="alamat-pengguna-jasa" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="email-pengguna-jasa">Email:</label>
-                            <input type="email" id="email-pengguna-jasa" name="email-pengguna-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="kota-pengguna-jasa">Kota:</label>
-                            <input type="text" id="kota-pengguna-jasa" name="kota-pengguna-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal-pengguna-jasa">Tanggal:</label>
-                            <input type="date" id="tanggal-pengguna-jasa" name="tanggal-pengguna-jasa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nohp-pengguna-jasa">Nomor Handphone/WhatsApp:</label>
-                            <input type="tel" id="nohp-pengguna-jasa" name="nohp-pengguna-jasa" required>
-                        </div>
-                        <div class="btn-send-form">
-                            <button type="submit">
-                                Kirim <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
+                    <div class="form-group">
+                        <label for="instansi">Instansi <span>*</span></label>
+                        <input type="text" id="instansi" name="instansi" maxlength="70" required>
                     </div>
-                    <div id="form-auditor" class="form-role" style="display: none;">
-                        <h3>FORMULIR PAKTA INTEGRITAS</h3>
-                        <div class="img-form"><img src="assets/pembatas.png" alt=""></div>
-                        <h3>AUDITOR</h3>
-                        <div class="form-group">
-                            <label for="nama-auditor">Nama Lengkap:</label>
-                            <input type="text" id="nama-auditor" name="nama-auditor" autofocus required>
-                        </div>
-                        <div class="form-group">
-                            <label for="jabatan-auditor">Jabatan:</label>
-                            <input type="text" id="jabatan-auditor" name="jabatan-auditor" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="instansi-auditor">Instansi:</label>
-                            <input type="text" id="instansi-auditor" name="instansi-auditor" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="alamat-auditor">Alamat Lengkap:</label>
-                            <textarea id="alamat-auditor" name="alamat-auditor" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="email-auditor">Email:</label>
-                            <input type="email" id="email-auditor" name="email-auditor" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="kota-auditor">Kota:</label>
-                            <input type="text" id="kota-auditor" name="kota-auditor" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal-auditor">Tanggal:</label>
-                            <input type="date" id="tanggal-auditor" name="tanggal-auditor" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nohp-auditor">Nomor Handphone/WhatsApp:</label>
-                            <input type="tel" id="nohp-auditor" name="nohp-auditor" required>
-                        </div>
-                        <div class="btn-send-form">
-                            <button type="submit">
-                                Kirim <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap <span>*</span></label>
+                        <textarea id="alamat" name="alamat" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kota">Kota <span>*</span></label>
+                        <input type="text" id="kota" name="kota" max-length="35" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal <span>*</span></label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nohp">Nomor Handphone/WhatsApp <span>*</span></label>
+                        <input type="tel" id="nohp" name="nohp" placeholder="081234567891"
+                            pattern="^(0|\+62|62)\d{8,14}$" required>
+                    </div>
+                    <div class="btn-send-form">
+                        <button type="submit">
+                            Kirim <i class="fa-solid fa-paper-plane"></i>
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-address">
