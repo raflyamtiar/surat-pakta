@@ -73,6 +73,7 @@ h2 {
 }
 
 .title-login img {
+  width: 50%;
   opacity: 0;
   transform: translateY(-30px);
   animation: slideDown 0.6s ease-out forwards;
@@ -109,10 +110,14 @@ h2 {
 
 .login-form input {
   width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: #fff;
   padding: 10px;
   margin: 10px 0;
-  border: none;
-  border-radius: 30px;
 }
 
 .login-logo {
@@ -154,6 +159,466 @@ h2 {
   transform: scale(0.98);
 }
 /* Login end */
+
+/* admin */
+.container-navbar-admin {
+  background-color: #0077b6;
+  padding: 20px;
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #ffffff;
+  color: #0077b6;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #0077b6;
+  color: #ffffff;
+}
+
+.container-admin {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-admin {
+  min-width: 20%;
+  background-color: #e8e8e8;
+  padding: 20px;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+}
+
+.sidebar-admin a {
+  text-decoration: none;
+}
+
+.box-admin {
+  background: #ffffff;
+  color: #0077b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 6px;
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.box-admin h3 {
+  font-size: 18px;
+}
+
+.box-admin:hover {
+  background: #0077b6;
+  color: white;
+}
+
+.dropdown-admin {
+  min-width: 25px;
+  position: relative;
+  margin: 10px;
+}
+
+.dropdown-admin * {
+  box-sizing: border-box;
+}
+
+.select-admin {
+  background: #ffffff;
+  color: #0077b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-admin h5 {
+  font-size: 16px;
+}
+
+.select-admin-clicked {
+  border: 2px #0077b6;
+  box-shadow: 0 0 0.8em #0077b6;
+}
+
+.select-admin:hover {
+  background: #0077b6;
+  color: white;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #0077b6;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu-admin {
+  list-style: none;
+  padding: 10px 20px;
+  background: #fff;
+  color: #0077b6;
+  border: 1px black solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2;
+  z-index: 1;
+}
+
+.menu-admin li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  border: 1px black solid;
+  width: 100%;
+  color: #0077b6;
+}
+
+.menu-admin li:hover {
+  background: #0077b6;
+  color: #fff;
+}
+
+.menu-admin-open {
+  display: block;
+  opacity: 1;
+}
+
+.active {
+  background: #0077b6;
+  color: white;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+}
+
+.content-admin {
+  width: 80%;
+  margin: 65px 0 0 20%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.header-line {
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+
+.cards-admin {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  width: 22%;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.card img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.card.green {
+  background-color: #28a745;
+  color: #000;
+}
+
+.card.blue {
+  background-color: #17a2b8;
+  color: #000;
+}
+
+.card.yellow {
+  background-color: #ffc107;
+  color: black;
+}
+
+.card.red {
+  background-color: #dc3545;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Animasi masuk dari atas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-size: 24px;
+  color: black;
+  animation: fadeIn 1s ease-in; /* Animasi untuk judul */
+}
+
+.cards-admin .card {
+  animation: fadeIn 1s ease-in; /* Animasi untuk kartu */
+}
+
+/* admin end */
+
+/* admin pegawai */
+.content-admin {
+  width: 80%;
+  margin: 65px 0 0 20%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.header-line {
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+
+.search-section {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 20px 0 20px 0;
+}
+
+.search-box {
+  width: 50%; /* Search box mengambil 50% dari lebar elemen induknya */
+  padding: 10px 40px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+.icon-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+
+.btn-tambah,
+.btn-export {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-tambah {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+.btn-tambah:hover {
+  background-color: #11539b;
+}
+
+.btn-export {
+  background-color: #28a745;
+}
+
+.btn-export:hover {
+  background-color: #207534;
+}
+
+.table-admin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-admin td {
+  color: black;
+  word-wrap: break-word; /* Memungkinkan kata panjang terputus di baris berikutnya */
+  max-width: 200px; /* Atur lebar maksimum sel agar tidak terlalu panjang */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
+}
+
+.table-admin th,
+.table-admin td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-admin th {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+}
+
+.table-admin td {
+  color: black;
+}
+
+.table-admin .icon-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.icon-action.print {
+  background-color: blue;
+  color: white;
+}
+
+.icon-action.print:hover {
+  color: #0056b3;
+}
+
+.icon-action.pencil {
+  background-color: yellow;
+  color: white;
+}
+
+.icon-action.pencil:hover {
+  color: #e0c100;
+}
+
+/* Gaya untuk ikon trash */
+.icon-action.trash {
+  background-color: red;
+  color: white;
+}
+
+.icon-action.trash:hover {
+  color: #b30000; /* Warna merah yang lebih gelap saat dihover */
+}
+
+/* Gaya untuk ikon di dalam div */
+.icon-action i {
+  font-size: 16px; /* Ukuran font ikon */
+  line-height: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* admin pegawai end*/
 
 /* Navbar */
 .container-navbar {
@@ -872,7 +1337,7 @@ input:required {
 
 .container-web-title img {
   margin-top: 10px;
-  width: 40%;
+  width: 30%;
   opacity: 0;
   transform: translateY(-30px);
   animation: slideDown 0.6s ease-out forwards;
