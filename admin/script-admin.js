@@ -27,13 +27,4 @@ dropdowns.forEach((dropdown) => {
       option.classList.add("active");
     });
   });
-
-  // Tutup dropdown jika klik terjadi di luar dropdown
-  document.addEventListener("click", (e) => {
-    if (!dropdown.contains(e.target)) {
-      select.classList.remove("select-admin-clicked");
-      caret.classList.remove("caret-rotate");
-      menu.classList.remove("menu-admin-open");
-    }
-  });
 });
