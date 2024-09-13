@@ -58,10 +58,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(
-      255,
-      255,
-      255,
-      0.6
+    255,
+    255,
+    255,
+    0.6
   ); /* Background color while loading */
   display: flex;
   justify-content: center;
@@ -83,10 +83,10 @@ body {
 /* Keyframes for the spinning animation */
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -232,23 +232,23 @@ nav ul li a:hover {
 /* Efek animasi slide-in dan bounce */
 @keyframes slideInAndBounce {
   0% {
-      transform: translateX(-100vw) rotate(-200deg); /* Mulai dari luar layar kiri dan miring */
+    transform: translateX(-100vw) rotate(-200deg); /* Mulai dari luar layar kiri dan miring */
   }
   70% {
-      transform: translateX(0) rotate(0deg); /* Logo tiba di posisi akhir tanpa rotasi */
+    transform: translateX(0) rotate(0deg); /* Logo tiba di posisi akhir tanpa rotasi */
   }
   100% {
-      transform: translateX(0) translateY(0); /* Posisi akhir tanpa efek bounce */
+    transform: translateX(0) translateY(0); /* Posisi akhir tanpa efek bounce */
   }
 }
 
 @keyframes bounce {
   0%,
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-30px); /* Bounce lebih tinggi */
+    transform: translateY(-30px); /* Bounce lebih tinggi */
   }
 }
 
@@ -269,12 +269,12 @@ nav ul li a:hover {
 /* Animasi untuk huruf jatuh */
 @keyframes dropLetter {
   0% {
-      opacity: 0;
-      transform: translateY(-50px); /* Mulai dari atas */
+    opacity: 0;
+    transform: translateY(-50px); /* Mulai dari atas */
   }
   100% {
-      opacity: 1;
-      transform: translateY(0); /* Teks tiba di posisi akhir */
+    opacity: 1;
+    transform: translateY(0); /* Teks tiba di posisi akhir */
   }
 }
 
@@ -482,8 +482,7 @@ nav ul li a:hover {
 
 .role-button-container button:hover {
   background-color: #d0d0d0; /* Change background color on hover */
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2),
-      0 8px 24px 0 rgba(0, 0, 0, 0.19); /* Increase shadow on hover */
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19); /* Increase shadow on hover */
 }
 
 .role-button-container button:active {
@@ -957,8 +956,8 @@ input:required {
 
 @keyframes slideDown {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -1077,8 +1076,8 @@ input:required {
 
 @keyframes slideDown {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -1228,34 +1227,29 @@ input:required {
 /* Page lapor end*/
 
 /* faq */
-/* Container utama untuk FAQ chatbot */
 .contentFAQ {
   width: 70%;
   padding-top: 90px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin: 0 auto; /* Centering container */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk hover */
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contentFAQ:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Lebih mendalam */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Header untuk FAQ Chatbot */
 .faqHeader {
-  background-color: #0096c7;
+  background-color: #0077b6;
   color: white;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  border-bottom: 1px solid #ddd;
-  transition: background-color 0.3s ease; /* Transisi saat hover */
-}
-
-.faqHeader:hover {
-  background-color: #0077b6; /* Perubahan warna saat di-hover */
+  border-bottom: 1px solid #e8e8e8;
+  transition: background-color 0.3s ease;
 }
 
 /* Chatbox untuk menampilkan pesan */
@@ -1289,24 +1283,24 @@ input:required {
   max-width: 80%;
   word-wrap: break-word;
   opacity: 0;
-  transform: translateY(20px); /* Posisi awal sebelum animasi */
-  animation: slideUp 0.4s ease forwards; /* Animasi slide up */
+  transform: translateY(20px);
+  animation: slideUp 0.4s ease forwards;
 }
 
 /* Pesan yang diterima (incoming) */
 .incoming {
   background-color: #fff;
   align-self: flex-start;
-  color: #000;
-  border: 1px solid #ddd;
+  color: #282828;
+  border: 1px solid #bbbbbb;
 }
 
 /* Pesan yang dikirim (outgoing) */
 .outgoing {
-  background-color: #48cae4;
+  background-color: #2ca474;
   color: white;
   align-self: flex-end;
-  border: 1px solid #0077b6;
+  border: 1px solid #249c6c;
 }
 
 /* Styling untuk tombol opsi pertanyaan dalam chatbot */
@@ -1317,7 +1311,7 @@ input:required {
 }
 
 .chat-options button {
-  background-color: #00b4d8;
+  background-color: #3ac890;
   color: white;
   border: none;
   border-radius: 5px;
@@ -1329,8 +1323,8 @@ input:required {
 }
 
 .chat-options button:hover {
-  background-color: #025c7a;
-  transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+  background-color: #249c6c;
+  transform: scale(1.05);
 }
 
 /* Tombol Mulai dan Pilih Lagi */
@@ -1338,52 +1332,51 @@ input:required {
   display: none;
   margin: 10px 43%;
   padding: 10px;
-  background-color: #0096c7;
+  background-color: #48cae4;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 10%;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi hover */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #startBtn:hover {
-  background-color: #025c7a;
-  transform: scale(1.05); /* Efek membesar saat hover */
+  background-color: #00b4d8;
+  transform: scale(1.05);
 }
 
 /* Keyframe animasi untuk pesan */
 @keyframes slideUp {
   from {
-      opacity: 0;
-      transform: translateY(20px); /* Pesan muncul dari bawah */
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0); /* Pesan berada di posisi akhir */
+    opacity: 1;
+    transform: translateY(0); /* Pesan berada di posisi akhir */
   }
 }
 
 /* Modal untuk gambar */
-/* Modal untuk gambar */
 .modal {
-  display: none; /* Disembunyikan secara default */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; /* Tinggi penuh untuk layar */
-  overflow-y: auto; /* Tambahkan scrolling jika konten melebihi tinggi layar */
-  background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-  display: block; /* Pastikan gambar ditampilkan sebagai blok */
-  margin: 50px auto; /* Jarak margin di atas dan bawah, dan gambar berada di tengah secara horizontal */
-  object-fit: contain; /* Gambar tetap sesuai dengan ukuran aslinya */
-  max-width: 90vw; /* Batas maksimal lebar gambar 90% dari viewport */
-  max-height: 90vh; /* Batas maksimal tinggi gambar 90% dari viewport */
+  display: block;
+  margin: 50px auto;
+  object-fit: contain;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 .close {
@@ -1416,11 +1409,11 @@ input:required {
 /* Footer */
 footer {
   background: linear-gradient(
-      to bottom,
-      rgba(72, 202, 228, 0.8),
-      rgba(0, 180, 216, 0.8),
-      rgba(0, 150, 199, 0.8),
-      rgba(0, 119, 182, 0.8)
+    to bottom,
+    rgba(72, 202, 228, 0.8),
+    rgba(0, 180, 216, 0.8),
+    rgba(0, 150, 199, 0.8),
+    rgba(0, 119, 182, 0.8)
   );
 }
 
@@ -1487,983 +1480,983 @@ footer {
 /* ukuran layar 1024px */
 @media screen and (max-width: 1024px) {
   .hidden {
-      display: none;
+    display: none;
   }
   .dropdown-content {
-      position: static;
-      box-shadow: none;
-      font-size: 90%;
-      padding: 8px;
+    position: static;
+    box-shadow: none;
+    font-size: 90%;
+    padding: 8px;
   }
 
   .logo-img {
-      width: 50px;
+    width: 50px;
   }
 
   .container-navbar {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   nav ul {
-      flex-direction: column;
-      width: 100%;
-      padding: 10px;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
   }
 
   nav ul li {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border: none;
-      padding: 8px;
-      border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
   }
 
   .dropdown-content li a {
-      padding: 8px;
-      border-radius: 5px;
+    padding: 8px;
+    border-radius: 5px;
   }
 
   .fa-caret-down {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .dropdown-i {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   nav ul.hidden {
-      display: none;
+    display: none;
   }
 
   .icon-nav {
-      display: flex;
-      align-items: center;
-      font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
   }
 
   main {
-      min-width: 100vw;
+    min-width: 100vw;
   }
 
   .container-home {
-      margin-top: 40px;
-      padding-top: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
   }
 
   .home-title {
-      width: 100%;
-      padding: 15px 50px;
-      height: fit-content;
-      margin-top: 30px;
+    width: 100%;
+    padding: 15px 50px;
+    height: fit-content;
+    margin-top: 30px;
   }
 
   .home-title h1 {
-      font-size: 26px;
-      text-align: center;
-      height: auto;
+    font-size: 26px;
+    text-align: center;
+    height: auto;
   }
 
   .home-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-content .home-content-text {
-      order: 2;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .home-content-text h6 {
-      text-align: center;
-      width: 100%;
-      font-size: x-large;
+    text-align: center;
+    width: 100%;
+    font-size: x-large;
   }
 
   .home-content-text p {
-      margin-block: 20px;
-      width: 100%;
-      text-align: center;
+    margin-block: 20px;
+    width: 100%;
+    text-align: center;
   }
 
   .home-content .home-content-logo {
-      order: 1;
+    order: 1;
   }
 
   .home-content-logo img {
-      width: 350px;
-      margin: 10px 20px 10px 0;
+    width: 350px;
+    margin: 10px 20px 10px 0;
   }
 
   @keyframes bounce {
-      0%,
-      100% {
-          transform: translateY(0);
-      }
-      50% {
-          transform: translateY(-20px); /* Bounce lebih tinggi */
-      }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Bounce lebih tinggi */
+    }
   }
 
   .tutorial {
-      width: 100%;
-      height: fit-content;
+    width: 100%;
+    height: fit-content;
   }
 
   .tutorial .tutorial-container {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .tutorial .tutorial-main {
-      margin: 20px;
+    margin: 20px;
   }
 
   .role {
-      width: 100%;
-      height: fit-content;
+    width: 100%;
+    height: fit-content;
   }
 
   .role .role-container {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .role .role-main {
-      margin: 30px;
+    margin: 30px;
   }
 
   .isi-form {
-      width: 100%;
-      min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
   }
 
   .form-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-content-logo {
-      order: 1;
+    order: 1;
   }
 
   .form-content .form-content-text {
-      order: 2;
-      width: 100%;
+    order: 2;
+    width: 100%;
   }
 
   .form-content .form-content-text-title {
-      width: 100%;
-      margin: 0;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-choice {
-      margin: 0;
-      width: 60%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+    margin: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .form-choice p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .form-choice select {
-      width: 85%;
-      text-align: center;
+    width: 85%;
+    text-align: center;
   }
 
   .form-choice option {
-      text-align: center;
+    text-align: center;
   }
 
   .form-container {
-      width: 65%;
-      padding: 25px;
-      margin-bottom: 10%;
+    width: 65%;
+    padding: 25px;
+    margin-bottom: 10%;
   }
 
   .form-container img {
-      width: 35%;
+    width: 35%;
   }
 
   .form-container h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .form-group label {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .input-group-prepend {
-      font-size: 14px;
-      padding: 8px;
+    font-size: 14px;
+    padding: 8px;
   }
 
   .btn-send-form button {
-      font-size: 16px;
-      padding: 12px;
+    font-size: 16px;
+    padding: 12px;
   }
 
   .footer-container {
-      width: 100%;
+    width: 100%;
   }
 
   .footer-container .footer-address {
-      width: 40%;
-      padding: 0 60px 40px 0;
+    width: 40%;
+    padding: 0 60px 40px 0;
   }
 
   .footer-container .footer-sosmed {
-      width: 40%;
-      padding: 0 0 40px 60px;
+    width: 40%;
+    padding: 0 0 40px 60px;
   }
 
   .footer-bottom {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .mybg img {
-      height: 100vh;
-      width: auto;
+    height: 100vh;
+    width: auto;
   }
 
   .container-layanan-pengaduan {
-      padding: 60px 20px;
-      width: 100%;
-      height: fit-content;
+    padding: 60px 20px;
+    width: 100%;
+    height: fit-content;
   }
 
   .container-web {
-      padding: 80px 40px;
-      width: 100%;
-      height: fit-content;
+    padding: 80px 40px;
+    width: 100%;
+    height: fit-content;
   }
 
   .container-web-title img {
-      width: 25%;
+    width: 25%;
   }
 
   .contentFAQ {
-      width: 70%;
-      padding-top: 90px;
+    width: 70%;
+    padding-top: 90px;
   }
 
   .faqHeader h2 {
-      font-size: 20px;
-      padding: 0;
+    font-size: 20px;
+    padding: 0;
   }
 
   .chatBox {
-      height: 270px;
+    height: 270px;
   }
 
   .chat-options button {
-      padding: 10px;
-      font-size: 16px;
+    padding: 10px;
+    font-size: 16px;
   }
 
   #startBtn {
-      width: 15%;
-      margin: 5px 42%;
+    width: 15%;
+    margin: 5px 42%;
   }
 }
 
 /* ukuran tablet */
 @media screen and (max-width: 768px) {
   .role-popup-text {
-      margin-inline: 50px;
-      padding: 20px;
-      gap: 10px;
-      height: fit-content;
-      box-shadow: 0px 0px 0p x 4px rgba(255, 255, 255, 0.4);
-      max-height: 90%;
-      overflow: scroll;
+    margin-inline: 50px;
+    padding: 20px;
+    gap: 10px;
+    height: fit-content;
+    box-shadow: 0px 0px 0p x 4px rgba(255, 255, 255, 0.4);
+    max-height: 90%;
+    overflow: scroll;
   }
 
   .role-popup-text h3 {
-      margin-inline: 60px;
+    margin-inline: 60px;
   }
 
   .role-popup-text .role-close-btn {
-      right: 10px;
+    right: 10px;
   }
 
   .hidden {
-      display: none;
+    display: none;
   }
   .dropdown-content {
-      position: static;
-      box-shadow: none;
-      font-size: 80%;
-      padding: 5px;
+    position: static;
+    box-shadow: none;
+    font-size: 80%;
+    padding: 5px;
   }
 
   .logo-img {
-      width: 40px;
+    width: 40px;
   }
 
   .container-navbar {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   nav ul {
-      flex-direction: column;
-      width: 100%;
-      padding: 5px;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
   }
 
   nav ul li {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan samar */
-      border: none; /* Hapus border default */
-      padding: 5px;
-      border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan samar */
+    border: none; /* Hapus border default */
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .dropdown-content li a {
-      padding: 5px;
-      border-radius: 5px;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .fa-caret-down {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dropdown-i {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   nav ul.hidden {
-      display: none;
+    display: none;
   }
 
   .icon-nav {
-      display: flex;
-      align-items: center;
-      font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
   }
 
   main {
-      min-width: 100vw;
+    min-width: 100vw;
   }
 
   .container-home {
-      margin-top: 50px;
-      padding-top: 40px;
+    margin-top: 50px;
+    padding-top: 40px;
   }
 
   .home-title {
-      width: 100%;
-      padding: 10px 50px;
-      height: fit-content;
-      margin-top: 30px;
+    width: 100%;
+    padding: 10px 50px;
+    height: fit-content;
+    margin-top: 30px;
   }
 
   .home-title h1 {
-      font-size: 24px;
-      text-align: center;
-      height: auto;
-      margin-block: 0px;
-      padding-block: 0px;
-      line-height: 1.2;
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+    margin-block: 0px;
+    padding-block: 0px;
+    line-height: 1.2;
   }
 
   .home-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-content .home-content-text {
-      order: 2;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .home-content-text h6 {
-      text-align: center;
-      width: 100%;
-      font-size: x-large;
+    text-align: center;
+    width: 100%;
+    font-size: x-large;
   }
 
   .home-content-text p {
-      margin-block: 20px;
-      width: 100%;
-      text-align: center;
+    margin-block: 20px;
+    width: 100%;
+    text-align: center;
   }
   .home-content .home-content-logo {
-      order: 1;
+    order: 1;
   }
   .home-content-logo img {
-      width: 300px;
-      margin: 10px 20px 10px 0;
+    width: 300px;
+    margin: 10px 20px 10px 0;
   }
 
   .tutorial {
-      width: 100%;
-      height: fit-content;
-      /* min-height: 100vh; */
+    width: 100%;
+    height: fit-content;
+    /* min-height: 100vh; */
   }
 
   .tutorial .tutorial-container {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .tutorial .tutorial-main {
-      margin: 15px;
+    margin: 15px;
   }
 
   .role {
-      width: 100%;
-      /* min-height: 100vh; */
-      height: fit-content;
+    width: 100%;
+    /* min-height: 100vh; */
+    height: fit-content;
   }
 
   .role .role-container {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .role .role-main {
-      margin: 20px;
+    margin: 20px;
   }
 
   .isi-form {
-      width: 100%;
-      min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
   }
 
   .form-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-content-logo {
-      order: 1;
+    order: 1;
   }
 
   .form-content .form-content-text {
-      order: 2;
-      width: 100%;
+    order: 2;
+    width: 100%;
   }
 
   .form-content .form-content-text-title {
-      width: 100%;
-      margin: 0;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-choice {
-      margin: 0;
-      width: 58%; /* Buat form-choice memiliki lebar penuh */
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+    margin: 0;
+    width: 58%; /* Buat form-choice memiliki lebar penuh */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .form-choice p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .form-choice select {
-      width: 80%;
-      text-align: center;
+    width: 80%;
+    text-align: center;
   }
 
   .form-choice option {
-      text-align: center;
+    text-align: center;
   }
 
   .form-container {
-      width: 60%;
-      padding: 20px;
-      margin-bottom: 10%;
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 10%;
   }
 
   .form-container img {
-      width: 30%;
+    width: 30%;
   }
 
   .form-container h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .form-group label {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .input-group-prepend {
-      font-size: 12px;
-      padding: 6px;
+    font-size: 12px;
+    padding: 6px;
   }
 
   .btn-send-form button {
-      font-size: 14px;
-      padding: 10px;
+    font-size: 14px;
+    padding: 10px;
   }
 
   .footer-container {
-      width: 100%;
+    width: 100%;
   }
 
   .footer-container .footer-address {
-      width: 35%;
-      padding: 0 50px 30px 0;
+    width: 35%;
+    padding: 0 50px 30px 0;
   }
 
   .footer-container .footer-sosmed {
-      width: 35%;
-      padding: 0 0 30px 50px;
+    width: 35%;
+    padding: 0 0 30px 50px;
   }
 
   .footer-bottom {
-      font-size: 8px;
+    font-size: 8px;
   }
 
   .mybg img {
-      height: 100vh;
-      width: auto;
+    height: 100vh;
+    width: auto;
   }
 
   .cara-melapor-content {
-      padding: 20px;
+    padding: 20px;
   }
 
   .cara-melapor-tutor h3 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .tutor-lapor ol {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .layanan-pengaduan-title img {
-      width: 20%;
+    width: 20%;
   }
 
   .container-layanan-pengaduan {
-      padding: 50px 20px;
-      width: 100%;
-      height: fit-content;
+    padding: 50px 20px;
+    width: 100%;
+    height: fit-content;
   }
 
   .container-web {
-      padding: 60px 30px;
-      width: 100%;
-      height: fit-content;
+    padding: 60px 30px;
+    width: 100%;
+    height: fit-content;
   }
 
   .container-web-title img {
-      width: 40%;
+    width: 40%;
   }
   .contentFAQ {
-      width: 70%;
-      padding-top: 70px;
+    width: 70%;
+    padding-top: 70px;
   }
 
   .faqHeader h2 {
-      font-size: 18px;
-      padding: 0;
+    font-size: 18px;
+    padding: 0;
   }
 
   .chatBox {
-      height: 290px;
+    height: 290px;
   }
 
   .chat-options button {
-      padding: 10px;
-      font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   #startBtn {
-      width: 20%;
-      margin: 5px 40%;
+    width: 20%;
+    margin: 5px 40%;
   }
 }
 
 /* ukuran mobile */
 @media screen and (max-width: 576px) {
   .role-popup-text h3 {
-      margin-inline: 20px;
+    margin-inline: 20px;
   }
 
   .hidden {
-      display: none;
+    display: none;
   }
   .dropdown-content {
-      position: static;
-      box-shadow: none;
-      font-size: 70%;
-      padding: 5px;
+    position: static;
+    box-shadow: none;
+    font-size: 70%;
+    padding: 5px;
   }
   .logo-img {
-      width: 30px;
+    width: 30px;
   }
 
   .container-navbar {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   nav ul {
-      flex-direction: column;
-      width: 100%;
-      padding: 5px;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
   }
 
   nav ul li {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan samar */
-      border: none; /* Hapus border default */
-      padding: 5px;
-      border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan samar */
+    border: none; /* Hapus border default */
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .dropdown-content li a {
-      padding: 5px;
-      border-radius: 5px;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .fa-caret-down {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dropdown-i {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   nav ul.hidden {
-      display: none;
+    display: none;
   }
 
   .icon-nav {
-      display: flex;
-      align-items: center;
-      font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
   }
 
   main {
-      width: 100vw;
+    width: 100vw;
   }
 
   .container-home {
-      margin-top: 20px;
-      padding-top: 0px;
+    margin-top: 20px;
+    padding-top: 0px;
   }
 
   .home-title {
-      width: 100%;
-      height: fit-content;
-      margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
   }
 
   .home-title h1 {
-      font-size: 24px;
-      text-align: center;
-      line-height: 1.3;
-      word-spacing: 3px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+    word-spacing: 3px;
   }
 
   .home-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-content .home-content-text {
-      order: 2;
-      width: 100%;
+    order: 2;
+    width: 100%;
   }
 
   .home-content-text h6 {
-      text-align: center;
-      width: 100%;
-      margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .home-content-text p {
-      margin-top: 3%;
-      width: 100%;
-      text-align: center;
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
   }
 
   .home-content .home-content-logo {
-      order: 1;
+    order: 1;
   }
   .home-content-logo img {
-      width: 300px;
-      margin: 10px 20px 10px 0;
+    width: 300px;
+    margin: 10px 20px 10px 0;
   }
 
   .tutorial {
-      height: fit-content;
-      width: 100%;
-      min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
   }
 
   .tutorial .tutorial-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .tutorial .tutorial-main {
-      margin: 15px;
-      width: 90%;
+    margin: 15px;
+    width: 90%;
   }
   .tutorial .tutorial-main:hover {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   .tutorial-title-container h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
   .tutorial .tutorial-icon i {
-      font-size: 50px;
-      padding-bottom: 0;
+    font-size: 50px;
+    padding-bottom: 0;
   }
 
   .tutorial .tutorial-content-container {
-      font-size: 20px;
-      margin: 0;
-      height: 0;
+    font-size: 20px;
+    margin: 0;
+    height: 0;
   }
 
   .role {
-      width: 100%;
-      /* height: 100vh; */
-      height: fit-content;
+    width: 100%;
+    /* height: 100vh; */
+    height: fit-content;
   }
 
   .role .role-container {
-      display: flex;
-      flex-direction: column;
-      padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
   }
 
   #role h2 {
-      text-align: center;
+    text-align: center;
   }
 
   .role .role-main {
-      margin: 20px;
-      width: 80%;
+    margin: 20px;
+    width: 80%;
   }
 
   .role-image {
-      overflow: hidden;
+    overflow: hidden;
   }
 
   .role-image img {
-      width: 170px;
-      height: auto;
+    width: 170px;
+    height: auto;
   }
 
   .isi-form {
-      width: 100%;
-      min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
   }
 
   .form-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-content-logo {
-      order: 1;
+    order: 1;
   }
 
   .form-content .form-content-text {
-      order: 2;
-      width: 100%;
+    order: 2;
+    width: 100%;
   }
 
   .form-content .form-content-text-title {
-      width: 100%;
-      margin: 0;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .form-choice {
-      margin: 0 !important;
-      width: 100%; /* Buat form-choice memiliki lebar penuh */
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      padding-inline: 20px;
+    margin: 0 !important;
+    width: 100%; /* Buat form-choice memiliki lebar penuh */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
   }
 
   .form-choice p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .form-choice select {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   .form-choice option {
-      text-align: center;
+    text-align: center;
   }
 
   .form-container {
-      width: 90%;
-      padding: 15px;
-      margin-bottom: 10%;
-      margin-top: 20px;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10%;
+    margin-top: 20px;
   }
 
   .form-container img {
-      width: 25%;
+    width: 25%;
   }
 
   .form-container h3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .form-group label {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .form-group input {
-      padding: 10px 5px;
+    padding: 10px 5px;
   }
 
   .input-group-prepend {
-      font-size: 10px;
-      padding: 4px;
+    font-size: 10px;
+    padding: 4px;
   }
 
   .btn-send-form button {
-      font-size: 12px;
-      padding: 10px;
+    font-size: 12px;
+    padding: 10px;
   }
 
   .footer-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-container .footer-address {
-      width: 85%;
-      margin: 0;
-      padding: 20px 0 0 0;
+    width: 85%;
+    margin: 0;
+    padding: 20px 0 0 0;
   }
 
   .footer-container .footer-sosmed {
-      width: 85%;
+    width: 85%;
   }
 
   .footer-sosmed ul {
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
   }
 
   .footer-sosmed h3 {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .footer-bottom {
-      font-size: 6px;
+    font-size: 6px;
   }
 
   .container-cara-melapor {
-      color: black;
-      width: 100%;
-      padding: 70px 0px;
-      border-radius: 8px;
-      background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    width: 100%;
+    padding: 70px 0px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.85);
   }
 
   .tutor-lapor {
-      width: 100%;
+    width: 100%;
   }
 
   .layanan-pengaduan-title img {
-      width: 25%;
+    width: 25%;
   }
 
   .container-layanan-pengaduan {
-      padding: 40px 15px;
-      width: 100%;
-      height: fit-content;
+    padding: 40px 15px;
+    width: 100%;
+    height: fit-content;
   }
 
   .layanan-content-isi {
-      width: 320px;
+    width: 320px;
   }
   .container-web {
-      padding: 40px 20px;
-      width: 100%;
-      height: fit-content;
+    padding: 40px 20px;
+    width: 100%;
+    height: fit-content;
   }
 
   .web-content-isi {
-      width: 300px;
+    width: 300px;
   }
   .container-web-title img {
-      width: 40%;
+    width: 40%;
   }
 
   .contentFAQ {
-      width: 60%;
-      padding-top: 60px;
+    width: 60%;
+    padding-top: 60px;
   }
 
   .faqHeader h2 {
-      font-size: 18px;
-      padding: 0;
+    font-size: 18px;
+    padding: 0;
   }
 
   .chatBox {
-      height: 280px;
+    height: 280px;
   }
 
   .chat-options button {
-      padding: 10px;
-      font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   #startBtn {
-      width: 20%;
-      margin: 5px 40%;
+    width: 20%;
+    margin: 5px 40%;
   }
 }
