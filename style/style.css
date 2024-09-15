@@ -1742,6 +1742,7 @@ footer {
   .mybg img {
     height: 100vh;
     width: auto;
+    object-position: center;
   }
 
   .container-layanan-pengaduan {
@@ -2048,6 +2049,7 @@ footer {
   .mybg img {
     height: 100vh;
     width: auto;
+    object-position: center;
   }
 
   .cara-melapor-content {
