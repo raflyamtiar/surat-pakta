@@ -2051,7 +2051,7 @@ footer {
   }
 
   .cara-melapor-title img {
-    width: 60%;
+    width: 50%;
   }
 
   .tutor-lapor ol {
@@ -2059,7 +2059,7 @@ footer {
   }
 
   .layanan-pengaduan-title img {
-    width: 60%;
+    width: 50%;
   }
 
   .container-layanan-pengaduan {
@@ -2075,7 +2075,7 @@ footer {
   }
 
   .container-web-title img {
-    width: 60%;
+    width: 50%;
   }
   .contentFAQ {
     width: 80%;
@@ -2355,6 +2355,18 @@ footer {
   .input-group-prepend {
     font-size: 10px;
     padding: 4px;
+  }
+
+  .cara-melapor-title img {
+    width: 60%;
+  }
+
+  .layanan-pengaduan-title img {
+    width: 60%;
+  }
+
+  .container-web-title img {
+    width: 60%;
   }
 
   .btn-send-form button {
