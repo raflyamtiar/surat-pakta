@@ -1254,7 +1254,7 @@ input:required {
 
 /* Chatbox untuk menampilkan pesan */
 .chatBox {
-  height: 80vh;
+  height: 70vh;
   padding: 20px;
   overflow-y: auto;
   background-color: #f3f3f3;
@@ -2051,7 +2051,7 @@ footer {
   }
 
   .cara-melapor-title img {
-    width: 30%;
+    width: 60%;
   }
 
   .tutor-lapor ol {
@@ -2059,7 +2059,7 @@ footer {
   }
 
   .layanan-pengaduan-title img {
-    width: 30%;
+    width: 60%;
   }
 
   .container-layanan-pengaduan {
@@ -2075,7 +2075,7 @@ footer {
   }
 
   .container-web-title img {
-    width: 40%;
+    width: 60%;
   }
   .contentFAQ {
     width: 80%;
