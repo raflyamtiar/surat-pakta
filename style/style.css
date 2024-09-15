@@ -2092,7 +2092,7 @@ footer {
   }
 
   .chatBox {
-    max-height: 120vh;
+    max-height: 100%;
   }
 
   .chat-options button {
