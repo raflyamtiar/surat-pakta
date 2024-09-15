@@ -1254,7 +1254,7 @@ input:required {
 
 /* Chatbox untuk menampilkan pesan */
 .chatBox {
-  height: 60vh;
+  height: 100vh;
   padding: 20px;
   overflow-y: auto;
   background-color: #f3f3f3;
