@@ -1761,10 +1761,6 @@ footer {
     padding: 0;
   }
 
-  .chatBox {
-    max-height: 100%;
-  }
-
   .chat-options button {
     padding: 10px;
     font-size: 16px;
@@ -2089,10 +2085,6 @@ footer {
   .faqHeader h2 {
     font-size: 18px;
     padding: 0;
-  }
-
-  .chatBox {
-    max-height: 100%;
   }
 
   .chat-options button {
